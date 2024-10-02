@@ -1,0 +1,90 @@
+body {
+  font-family: mainFont, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: aliceblue;
+  font-weight: 100;
+  font-size: 55%;
+}
+
+.info-rect {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  background-color: #212121;
+  width: 90vw;
+  height: 90vh;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.profile {
+  position: relative;
+  left: 50%;
+  top: 30px;
+  width: 110;
+  height: 110;
+  border-radius: 50;
+  transform: translateX(-50%);
+}
+
+.name {
+  text-align: center;
+  padding-top: 46;
+  line-height: 0.5;
+  font-size: 10px;
+}
+
+.info {
+    margin-top: 60;
+    position: relative;
+    margin-left: 20;
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media only screen and (min-width: 650px) {
+    .name {
+        font-size: 1.3vw;
+    }
+    .info {
+        font-size: 1.5vw;
+    }
+  }
+
+.github-button {
+  position: relative;
+  left: 50%;
+  top: 2px;
+  width: 100px;
+  padding-top: 15;
+  height: 20;
+  border-radius: 50;
+  transform: translateX(-50%);
+  background-color: #af43c4;
+  border-radius: 100px;
+  align-items: center;
+  text-align: center;
+  font-family: mainFont;
+  font-size: 12px;
+}
+
+
+
+@font-face {
+  font-family: "mainFont";
+  src: url("/assets/modern.otf") format("opentype");
+}
+
+.mainpage {
+  background-image: linear-gradient(to bottom, #af43c4, #57bbd2);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
