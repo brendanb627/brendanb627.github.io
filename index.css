@@ -28,7 +28,7 @@ h2 {
 }
 
 .image-container {
-  position: relative;
+  position: absolute;
   top: 15px;
   left: 2vw;
   width: 46vw;
