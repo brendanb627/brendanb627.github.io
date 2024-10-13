@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "parallax-js": "^3.1.0",
+    "particles.js": "^2.0.0"
+  }
+}

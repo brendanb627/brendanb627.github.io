@@ -1,28 +1,31 @@
 <head>
   <link rel="stylesheet" type="text/css" href="index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="particles.js"></script>
+  <script src="parallax.js"></script>
+  <script src="script.js"></script>
 </head>
-  <div class="mainpage">
-    <div class="info-rect">
-            <img class='profile' src="assets/profile-img.png" alt="Profile Image">
-            <div class="name">
-                <h1>Brendan Bessman</h1>
-                <h4>CS Major at OSU Cascades</h2>
-                    <div class="github-button" href="https://github.com/brendanb627">
-                        <a href="https://github.com/brendanb627" target="_blank" class="link">Github</a>
-                    </div>
-            </div>
-            <div class="info">
-                <div>
-                    <h3>
-                        Three things I hope to gain from this course:
-                    </h3>
-                    <ol>
-                        <li>Lots of coding practice</li>
-                        <li>More experience in popular coding languages</li>
-                        <li>Challenging assignments that create good problem solving</li>
-                    </ol>
-                </div>
-            </div>
+<div class="mainpage">
+  <div class="image-container">
+    <div class="name">
+      <h1>Brendan Bessman</h1>
+      <h2>Full stack web developer & CS Major @ OSU</h2>
+    </div>
+    <div>
+      <div id="scene">
+        <img
+          class="background2"
+          data-depth="0.05"
+          src="assets/background-2.PNG"
+        />
+        <img
+          class="background3"
+          data-depth="0.15"
+          src="assets/background-3.PNG"
+        />
+      </div>
     </div>
   </div>
-
+  <div id="particles-js"></div>
+</div>
