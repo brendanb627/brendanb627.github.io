@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "parallax-js": "^3.1.0",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "typed.js": "^2.1.0"
   }
 }

@@ -1,12 +1,25 @@
 <head>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="particles.js"></script>
   <script src="parallax.js"></script>
   <script src="script.js"></script>
+  <script src="type-script.js"></script>
   <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 <div class="mainpage">
+  <div class="profile-sect">
+    <img class="profile-img" src="assets/profile-img.png" />
+  </div>
+  <div class="left-side">
+    I am a: <br><span class="purple" id="typed-text"></span>
+    
+  </div>
+  <img class="down-arrow" src="assets/arrowDown.png"/>
+  <a class="github" href="https://github.com/brendanb627" target="_blank"><img class="github-icon" src="assets/github-icon.png"/></a>
+  <a class="linkedIn" href="https://www.linkedin.com/in/brendan-bessman-413997331/" target="_blank"><img class="linkedIn-icon" src="assets/linkedIn-icon.png"/></a>
+  <a class="email" href="mailto:bdbessman@gmail.com"><img class="email-icon" src="assets/email-icon.png"/></a>
   <div class="image-container">
     <div class="name">
       <h1>Brendan Bessman</h1>
@@ -28,4 +41,11 @@
     </div>
   </div>
   <div id="particles-js"></div>
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: ['Web developer.', 'musician.', 'Huge nerd.', "back-end programmer.", "Front-end programmer.", "Web designer."],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
 </div>

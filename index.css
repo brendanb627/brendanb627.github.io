@@ -8,10 +8,9 @@ body {
 
 h2 {
   font-size: 1.3rem;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-
 
 @font-face {
   font-family: "mainFont";
@@ -25,6 +24,9 @@ h2 {
   left: 0px;
   width: 100vw;
   height: 100vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
 }
 
 .image-container {
@@ -42,10 +44,34 @@ h2 {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  .image-container {
-    display: none;
-  }
+.profile-sect {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+}
+
+.profile-img {
+  position: absolute;
+  left: 50%;
+  top: -17%;
+  width: 130px;
+  transform: translate(-50%, -80%);
+  z-index: 2;
+  border-radius: 10000px;
+}
+
+.purple {
+  color: #e31ef1;
+}
+
+.left-side {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 2.2vw;
 }
 
 .name {
@@ -58,6 +84,124 @@ h2 {
   z-index: 2;
 }
 
+.down-arrow {
+  position: absolute;
+  left: 70%;
+  bottom: 6%;
+  width: 7%;
+  opacity: 0.3;
+  z-index: 5;
+}
+
+.github {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  top: 60%;
+  left: 12%;
+  z-index: 3;
+  background-color: rgb(20, 22, 24);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add this line */
+}
+.github:hover {
+  box-shadow: none;
+  transform: translateY(2%);
+}
+
+.github-icon {
+  height: 90%;
+  left: 400%;
+  z-index: 5;
+  transform: translate(30%, 4%);
+}
+
+.email {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  top: 60%;
+  left: 33%;
+  z-index: 3;
+  background-color: rgb(20, 22, 24);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add this line */
+}
+.email:hover {
+  box-shadow: none;
+  transform: translateY(2%);
+}
+
+.email-icon {
+  height: 90%;
+  z-index: 5;
+  transform: translate(33%, 4%);
+}
+
+.linkedIn {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  top: 60%;
+  left: 22.5%;
+  z-index: 3;
+  background-color: rgb(20, 22, 24);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add this line */
+}
+.linkedIn:hover {
+  box-shadow: none;
+  transform: translateY(2%);
+}
+
+.linkedIn-icon {
+  height: 90%;
+  left: 400%;
+  z-index: 5;
+  transform: translate(30%, 4%);
+}
+
+@media (max-device-width: 799px) {
+  #scene {
+    display: none;
+  }
+  .image-container {
+    width: 100vw;
+    background: none;
+    left: 0;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .profile-sect {
+    width: 100%;
+    height: 80%;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .profile-img {
+    width: 200px;
+  }
+  .left-side {
+    font-size: 50px;
+    left: 3vw;
+    top: 70%;
+    font-size: 40px;
+  }
+
+  .down-arrow {
+    position: absolute;
+    left: 45%;
+    bottom: 6%;
+    width: 10%;
+    opacity: 0.3;
+  }
+  .email {
+    background-color: rgb(34, 38, 41);
+    width: 100px;
+  }
+}
 
 #particles-js {
   position: absolute;
