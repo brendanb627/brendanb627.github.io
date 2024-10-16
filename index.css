@@ -35,7 +35,7 @@ h2 {
   left: 2vw;
   width: 46vw;
   height: 96%;
-  background-image: url("background-4.png");
+  background-image: url("assets/background-4.png");
   background-size: cover;
   background-repeat: no-repeat;
   filter: blur(0px);
@@ -65,6 +65,9 @@ h2 {
 
 .purple {
   color: #e31ef1;
+}
+.gray {
+  color: #3e3e3e;
 }
 
 .left-side {
@@ -102,7 +105,7 @@ h2 {
   z-index: 3;
   background-color: rgb(20, 22, 24);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add this line */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .github:hover {
   box-shadow: none;
@@ -125,7 +128,7 @@ h2 {
   z-index: 3;
   background-color: rgb(20, 22, 24);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add this line */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .email:hover {
   box-shadow: none;
@@ -147,7 +150,7 @@ h2 {
   z-index: 3;
   background-color: rgb(20, 22, 24);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add this line */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .linkedIn:hover {
   box-shadow: none;
@@ -159,6 +162,91 @@ h2 {
   left: 400%;
   z-index: 5;
   transform: translate(30%, 4%);
+}
+.sect-2 {
+  position: relative;
+  top: 100%;
+  width: 100vw;
+  height: 100vh;
+  margin: 5%;
+  font-size: 1.2vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.heading-2 {
+  font-family: mainFont;
+  font-size: 1.6vw;
+}
+
+.CosmoTrak {
+  position: relative;
+  top: 80px;
+  background-color: rgb(46, 50, 54);
+  z-index: 3;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+  font-size: 22px;
+}
+
+.github-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90vw;
+  color: inherit; /* Use the current text color */
+  text-decoration: none;
+}
+
+.github-projects a {
+  width: 45%;
+  margin: 0px;
+  color: inherit; /* Use the current text color */
+  text-decoration: none;
+}
+
+.Hubspot {
+  position: relative;
+  top: 80px;
+  background-color: rgb(46, 50, 54);
+  z-index: 3;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+  font-size: 22px;
+}
+.CosmoTrak,
+.Hubspot {
+  width: 35%;
+  margin: 5px;
+  padding: 15px;
+  font-size: 20px;
+}
+.about-me {
+  position: relative;
+  background-color: rgb(46, 50, 54);
+  border-radius: 20px;
+  width: 85%;
+  padding: 2%;
+  opacity: 0.7;
+  z-index: 3;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Hubspot:hover {
+  box-shadow: none;
+  transform: translateY(2%);
+  color: inherit; /* Use the current text color */
+  text-decoration: none;
+}
+.CosmoTrak:hover {
+  box-shadow: none;
+  transform: translateY(2%);\color: inherit; /* Use the current text color */
+  text-decoration: none;
 }
 
 @media (max-device-width: 799px) {
@@ -193,13 +281,61 @@ h2 {
   .down-arrow {
     position: absolute;
     left: 45%;
-    bottom: 6%;
+    bottom: 8%;
     width: 10%;
     opacity: 0.3;
   }
   .email {
     background-color: rgb(34, 38, 41);
-    width: 100px;
+    width: 20%;
+    left: 40%;
+    height: 90px;
+  }
+  .github {
+    background-color: rgb(34, 38, 41);
+    width: 20%;
+    left: 10%;
+    height: 90px;
+  }
+  .linkedIn {
+    background-color: rgb(34, 38, 41);
+    width: 20%;
+    left: 70%;
+    height: 90px;
+  }
+  .linkedIn-icon {
+    transform: translate(70%, 4%);
+  }
+  .github-icon {
+    transform: translate(70%, 4%);
+  }
+  .email-icon {
+    transform: translate(75%, 4%);
+  }
+  .sect-2 {
+    font-size: 3.5vw;
+  }
+  .heading-2 {
+    font-size: 3.5vw;
+  }
+  .github-projects a {
+    width: 100%;
+    margin: 20px 0;
+    text-decoration: none;
+  }
+.non-link {
+  text-decoration: none;
+}
+
+  .CosmoTrak,
+  .Hubspot {
+    font-size: 50px;
+    text-decoration: none;
+    color: inherit; 
+    text-decoration: none;
+  }
+  .about-me {
+    font-size: 50px;
   }
 }
 
@@ -208,7 +344,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 500%;
   z-index: 1;
 }
 

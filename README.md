@@ -1,7 +1,7 @@
 # brendanb627.github.io
-## GitHub Account Assignment
-Github was built by developers for developers
-
-Git is a Version Control System
-
-Github is owned by Microsoft
+# Download required packages
+```bash
+npm i parallax.js
+npm i particles.js
+npm i typed.js
+```

@@ -1,4 +1,6 @@
 <head>
+  <title>Brendan's Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -13,13 +15,21 @@
     <img class="profile-img" src="assets/profile-img.png" />
   </div>
   <div class="left-side">
-    I am a: <br><span class="purple" id="typed-text"></span>
-    
+    I am a: <br /><span class="purple" id="typed-text"></span>
   </div>
-  <img class="down-arrow" src="assets/arrowDown.png"/>
-  <a class="github" href="https://github.com/brendanb627" target="_blank"><img class="github-icon" src="assets/github-icon.png"/></a>
-  <a class="linkedIn" href="https://www.linkedin.com/in/brendan-bessman-413997331/" target="_blank"><img class="linkedIn-icon" src="assets/linkedIn-icon.png"/></a>
-  <a class="email" href="mailto:bdbessman@gmail.com"><img class="email-icon" src="assets/email-icon.png"/></a>
+  <img class="down-arrow" src="assets/arrowDown.png" />
+  <a class="github" href="https://github.com/brendanb627" target="_blank">
+    <img class="github-icon" src="assets/github-icon.png" />
+  </a>
+  <a
+    class="linkedIn"
+    href="https://www.linkedin.com/in/brendan-bessman-413997331/"
+    target="_blank"
+    ><img class="linkedIn-icon" src="assets/linkedIn-icon.png"
+  /></a>
+  <a class="email" href="mailto:bdbessman@gmail.com"
+    ><img class="email-icon" src="assets/email-icon.png"
+  /></a>
   <div class="image-container">
     <div class="name">
       <h1>Brendan Bessman</h1>
@@ -42,10 +52,81 @@
   </div>
   <div id="particles-js"></div>
   <script>
-    var typed = new Typed('#typed-text', {
-      strings: ['Web developer.', 'musician.', 'Huge nerd.', "back-end programmer.", "Front-end programmer.", "Web designer."],
+    var typed = new Typed("#typed-text", {
+      strings: [
+        "Web developer.",
+        "musician.",
+        "Huge nerd.",
+        "back-end programmer.",
+        "Front-end programmer.",
+        "Web designer.",
+      ],
       typeSpeed: 50,
-      loop: true
+      loop: true,
     });
   </script>
+
+  <div class="sect-2">
+    <div class="heading-2" style="padding-top: 0%">
+      <span class="gray">C:\users\brendan></span> cd
+      <span class="purple">Personal_Projects</span><br />
+    </div>
+    Anything from Hackathon projects to random coding inspirations
+    <div class="github-projects">
+      <a class="CosmoTrak" href="https://github.com/brendanb627/CosmoTrak" target="_blank">
+        <h1><span class="purple">CosmoTrak</span></h1>
+        <div>
+          A web app that displays real-time planet locations and PHO data using
+          threeJS and React
+        </div>
+      </a>
+      <a class="Hubspot" href="https://github.com/brendanb627/hubspot-lambda-secrets-demo" target="_blank">
+        <h1><span class="purple">Hubspot API Integration</span></h1>
+        <div>Hubspot API integration using AWS Secret Manager and Lambda</div>
+      </a>
+    </div>
+    <div class="heading-2" style="padding-top: 120px">
+      <span class="gray">C:\users\brendan\personal_projects></span> cd . .
+    </div>
+    <div class="heading-2" style="padding-top: 8%">
+      <span class="gray"><br />C:\users\brendan></span> cd
+      <span class="purple">about_me</span><br />
+    </div>
+    Info on who I am and what I love to do
+    <p class="about-me">
+      I am a CS Major at the OSU Cascades campus and have been coding since I
+      was a little kid. When I'm not programming, I enjoy being outside, playing
+      music, and hanging out with friends
+    </p>
+    <div class="heading-2" style="padding-top: 3%">
+      <span class="gray">C:\users\brendan\about_me></span> cd . .<br /><br />
+    </div>
+    <div class="heading-2" style="padding-top: 8%">
+      <span class="gray">C:\users\brendan></span> cd
+      <span class="purple">experience</span><br />
+    </div>
+    My past coding experience
+    <p class="about-me">
+      I have worked most recently as an intern with the company
+      <a class="purple" href="https://platformr.cloud/" target="_blank"
+        >Platformr</a
+      >
+      where I helped manage both the frontend and backend of the platformr
+      website as well as maintenance. I used backend AWS services such as
+      Lambda, DynamoDB, Amplify, API Gateway, Secrets Manager, etc. As well as
+      ReactJS for frontend work.
+    </p>
+    <div class="heading-2" style="padding-top: 3%">
+      <span class="gray">C:\users\brendan\experience></span> cd . .<br /><br />
+    </div>
+    <div class="heading-2" style="padding-top: 8%">
+      <span class="gray">C:\users\brendan></span> cd
+      <span class="purple">education</span><br />
+    </div>
+    My school info
+    <p class="about-me">
+      I was the first graduating class of Caldera High School and am currently
+      enrolled as a Computer science major at OSU Cascades
+    </p>
+  </div>
 </div>
